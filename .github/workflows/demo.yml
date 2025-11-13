@@ -50,6 +50,6 @@ jobs:
       - name: Mostrar ficheros
         run: ls
       - name: Mostrar el nombre del fichero
-        run: echo "${needs.build.outputs.script-file}"
+        run: echo "${{ needs.build.outputs.script-file }}"
       - name: Deploy
         run: echo "Deploying..."
